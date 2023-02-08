@@ -10,6 +10,7 @@ spec:
   selector:
     matchLabels:
       app: ecsdemo-nodejs
+      customTag: demoapp
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -19,7 +20,6 @@ spec:
     metadata:
       labels:
         app: ecsdemo-nodejs
-        customTag: demoapp
     spec:
       containers:
       - image: brentley/ecsdemo-nodejs:latest

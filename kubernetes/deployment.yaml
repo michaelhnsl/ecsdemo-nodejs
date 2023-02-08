@@ -19,6 +19,7 @@ spec:
     metadata:
       labels:
         app: ecsdemo-nodejs
+        customTag: demoapp
     spec:
       containers:
       - image: brentley/ecsdemo-nodejs:latest

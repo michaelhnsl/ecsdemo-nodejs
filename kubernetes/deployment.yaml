@@ -30,3 +30,5 @@ spec:
         ports:
         - containerPort: 3000
           protocol: TCP
+      nodeSelector:
+        customTag: demoapp
